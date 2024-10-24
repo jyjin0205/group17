@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Group17_iCAREAPP.props" />
+</Project>
