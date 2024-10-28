@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Group17_iCAREAPP.Models;
+namespace iCARE.Models;
 
 public partial class PatientRecord
 {
@@ -29,7 +29,7 @@ public partial class PatientRecord
 
     public virtual ICollection<DocumentMetadatum> DocumentMetadata { get; set; } = new List<DocumentMetadatum>();
 
-    public virtual GeoCode IdNavigation { get; set; } = null!;
+    public virtual GeoCode? GeographicalUnitNavigation { get; set; }
 
     public virtual ICareworker? Modifier { get; set; }
 

@@ -1,16 +1,21 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Group17_iCAREAPP.Models;
+using iCARE.Models;
 
-namespace Group17_iCAREAPP.Controllers;
+
+namespace iCARE.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
 
+    private readonly Group17ICaredbContext _context;
+
     public HomeController(ILogger<HomeController> logger)
     {
         _logger = logger;
+
+        _context = new Group17ICaredbContext();
     }
 
     public IActionResult Index()
@@ -20,7 +25,8 @@ public class HomeController : Controller
 
     public IActionResult Privacy()
     {
-        return View();
+        var geoCodeData = _context.GeoCodes.ToList();
+        return View(geoCodeData);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

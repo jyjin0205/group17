@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Group17_iCAREAPP\\Group17_iCAREAPP.csproj": {}
+    "C:\\iCARE2\\group17\\Group17_iCAREAPP.csproj": {}
   },
   "projects": {
-    "C:\\Group17_iCAREAPP\\Group17_iCAREAPP.csproj": {
+    "C:\\iCARE2\\group17\\Group17_iCAREAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Group17_iCAREAPP\\Group17_iCAREAPP.csproj",
+        "projectUniqueName": "C:\\iCARE2\\group17\\Group17_iCAREAPP.csproj",
         "projectName": "Group17_iCAREAPP",
-        "projectPath": "C:\\Group17_iCAREAPP\\Group17_iCAREAPP.csproj",
+        "projectPath": "C:\\iCARE2\\group17\\Group17_iCAREAPP.csproj",
         "packagesPath": "C:\\Users\\j_usi\\.nuget\\packages\\",
-        "outputPath": "C:\\Group17_iCAREAPP\\obj\\",
+        "outputPath": "C:\\iCARE2\\group17\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\j_usi\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,35 @@
+@model IEnumerable<iCARE.Models.PatientRecord>
+
+
+<h2>Patient Records for GeoCode</h2>
+
+<style>
+/* Grid Container 설정 */
+    .record-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 최소 200px을 유지하고 자동으로 크기 조절 */
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #f8f9fa;
+    }
+
+    /* Grid Item 설정 */
+    .record-item {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }    
+</style>
+
+<div class = "record-grid">
+    @foreach (var record in Model)
+    {
+        <div class="record-item">
+            <h4>Patient ID: @record.Id</h4>
+            <p>Name: @record.TreatmentArea</p>
+        </div>
+    }
+</div>

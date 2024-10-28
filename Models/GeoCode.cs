@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Group17_iCAREAPP.Models;
+namespace iCARE.Models;
 
 public partial class GeoCode
 {
@@ -9,5 +9,5 @@ public partial class GeoCode
 
     public string Description { get; set; } = null!;
 
-    public virtual PatientRecord? PatientRecord { get; set; }
+    public virtual ICollection<PatientRecord> PatientRecords { get; set; } = new List<PatientRecord>();
 }

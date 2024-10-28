@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace Group17_iCAREAPP.Models;
+namespace iCARE.Models;
 
 public partial class Group17ICaredbContext : DbContext
 {
@@ -212,9 +212,8 @@ public partial class Group17ICaredbContext : DbContext
                 .HasColumnName("treatmentArea");
             entity.Property(e => e.Weight).HasColumnName("weight");
 
-            entity.HasOne(d => d.IdNavigation).WithOne(p => p.PatientRecord)
-                .HasForeignKey<PatientRecord>(d => d.Id)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+            entity.HasOne(d => d.GeographicalUnitNavigation).WithMany(p => p.PatientRecords)
+                .HasForeignKey(d => d.GeographicalUnit)
                 .HasConstraintName("FK_PatientRecord_GeoCodes");
 
             entity.HasOne(d => d.Modifier).WithMany(p => p.PatientRecords)

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Group17_iCAREAPP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c301c2830cb28176e9ced8f2fd9e2914c9a5041")]
 [assembly: System.Reflection.AssemblyProductAttribute("Group17_iCAREAPP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Group17_iCAREAPP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-namespace Group17_iCAREAPP.Models;
+namespace iCARE.Models;
 
 public class ErrorViewModel
 {

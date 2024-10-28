@@ -1,6 +1,38 @@
-﻿@{
+﻿@model IEnumerable<iCARE.Models.GeoCode>
+
+@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+    
+<h2>All Geocodes</h2>
+
+<div class = "geo-grid">
+    @foreach (var item in Model)
+    { // Controller : iCAREBoardController, action method : DisplayByGeoCode
+        <a href="@Url.Action("DisplayByGeoCode","iCAREBoard",new{geoCodeId = item.Id})" target="_self" class="geo-item"> 
+            <h4>@item.Description</h4>
+        </a>
+    } 
+</div>
+<style>
+    /* Grid Container 설정 */
+    .geo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 최소 200px을 유지하고, 공간에 맞게 자동 조절 */
+        gap: 1rem;
+        padding: 1rem;
+        background-color: #f8f9fa;
+    }
+
+    /* Grid Item 설정 */
+    .geo-item {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }  
+</style>
+

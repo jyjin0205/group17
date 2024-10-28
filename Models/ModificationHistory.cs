@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Group17_iCAREAPP.Models;
+namespace iCARE.Models;
 
 public partial class ModificationHistory
 {
